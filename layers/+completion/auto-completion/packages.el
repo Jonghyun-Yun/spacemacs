@@ -211,7 +211,8 @@
         ;; ~/.emacs.d/layers/auto-completion/snippets
         (push spacemacs-layer-snippets-dir yas-snippet-dirs)
         ;; ~/.emacs.d/elpa/yasnippet-xxxxx/snippets
-        (push 'yas-installed-snippets-dir yas-snippet-dirs)
+        ;; to suppress warnings, commented out
+        ;; (push 'yas-installed-snippets-dir yas-snippet-dirs)
         ;; ~/.spacemacs.d/snippets
         (when dotspacemacs-directory-snippets-dir
           (push dotspacemacs-directory-snippets-dir yas-snippet-dirs))
